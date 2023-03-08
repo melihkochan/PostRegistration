@@ -1,9 +1,9 @@
 import React from "react";
-import Addpost from "./components/AddPost";
+import TextApp from "./pages/textApp";
 function App() {
   return (
     <div>
-      <Addpost />
+      <TextApp/>
     </div>
   );
 }

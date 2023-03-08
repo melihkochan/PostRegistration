@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+    margin-top: 10px;
+    
+}
+.text{
+    margin-top: 10px;
+}
+.buttonDelete{
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  margin-left: 20px;
+}
+.buttonUpdatte{
+    background-color: cadetblue; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+    margin-left: 20px;
+  }
+.li{
+    list-style-type: square;
+}
