@@ -54,26 +54,16 @@ const TextApp = () => {
     Modal.confirm({
       title: "Güncelleme Ekranı",
       content: (
-        <Input
-          defaultValue={record.content}
-          onChange={(e) => {
-            const newContent = e.target.value;
-            setTexts(
-              texts.map((item) => {
-                if (item.id === record.id) {
-                  return {
-                    ...item,
-                    content: newContent,
-                  };
-                }
-                return item;
-                
-              })
-              
-            );
-          }}
-        />
+        <Input defaultValue={record.content}  />
       ),
+      onOk: () => {
+        const inputValue = document.querySelector(".ant-modal-content input").value;
+        setTexts((texts) =>
+          texts.map((item) =>
+            item.id === record.id ? { ...item, content: inputValue } : item
+          )
+        );
+      },
     });
   };
 
